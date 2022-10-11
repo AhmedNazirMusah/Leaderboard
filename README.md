@@ -9,12 +9,20 @@
 - CSS
 - webpack
 
+## Getting Started
+
+**clone this repository.**
+
+$ cd Leaderboard.
+
+$ npm run build .
+
+$ npm start .
+
+
 ## Live Demo
 
-[Live Demo Link]()
-
-
-## Getting Started
+[Live Demo Link -coming soon]()
 
 ## Author
 
