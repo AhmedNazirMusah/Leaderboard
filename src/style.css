@@ -1,0 +1,19 @@
+ul {
+  padding-inline-start: 0;
+  list-style: none;
+  border: 1px solid;
+  width: max-content;
+  padding-right: 250px;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  gap: 79px;
+}
+
+.second-div {
+  align-items: end;
+  display: flex;
+  flex-direction: column;
+}
