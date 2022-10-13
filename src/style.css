@@ -1,13 +1,35 @@
 ul {
   padding-inline-start: 0;
   list-style: none;
-  border: 1px solid;
+  border: 2px solid black;
+  border-radius: 6px;
+  overflow-y: scroll;
+  max-height: 335px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 2% 5%;
+  transition: 300ms all ease-in-out;
+}
+
+h1 {
+  color: white;
+  font-size: 30px;
+  transition: 300ms all ease-in-out;
 }
 
 section {
   display: flex;
   flex-direction: row;
-  gap: 79px;
+  gap: 10%;
+  background-color: rgb(214, 206, 151);
+  padding: 2%;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  transition: 300ms all ease-in-out;
 }
 
 form {
@@ -20,6 +42,8 @@ p {
   padding: 10px;
   margin-block-start: 0;
   margin-block-end: 0;
+  font-size: 20px;
+  font-weight: 900;
 }
 
 .score-holder > p:nth-child(even) {
@@ -33,4 +57,51 @@ p {
 
 .red-border {
   border: 2px solid red;
+}
+
+body {
+  background-image: url(./img/back-G.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 300ms all ease-in-out;
+  overflow: hidden;
+}
+
+input {
+  padding: 8px;
+  border-radius: 7px;
+}
+
+button {
+  padding: 8px;
+  border-radius: 7px;
+}
+
+.refresh:hover {
+  background-color: antiquewhite;
+}
+
+input:hover {
+  background-color: antiquewhite;
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+  }
+
+  main {
+    padding: 106px 20%;
+  }
+
+  .left-side {
+    width: 550px;
+  }
+
+  h1 {
+    color: white;
+    font-size: 45px;
+  }
 }
