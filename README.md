@@ -22,7 +22,7 @@ $ npm start .
 
 ## Live Demo
 
-[Live Demo Link -coming soon]()
+[Live Demo Link](https://ahmednazirmusah.github.io/Leaderboard/dist/)
 
 ## Author
 
