@@ -1,9 +1,8 @@
 const populate = (apiForGame) => {
-  const scoresContainer = document.querySelector('.score-holder');
-  // scoresContainer.innerHTML = '';
+  const holder = document.querySelector('.score-holder');
   apiForGame = apiForGame.sort((a, b) => b.score - a.score);
   const nameAndUserScore = apiForGame.map((list) => `<p>${list.user} : ${list.score} </p>`).join('');
-  scoresContainer.innerHTML = nameAndUserScore;
+  holder.innerHTML = nameAndUserScore;
 };
 
 export default populate;
