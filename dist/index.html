@@ -11,21 +11,17 @@
         <h1>Leaderboard</h1>
         <section>
             <div>
-                <h2>Recent Scores <button type="button">Refresh</button></h2>
-                <ul>
-                  <li>Name : 100</li>
-                  <li>Name : 45</li>
-                  <li>Name : 10</li>
-                  <li>Name : 80</li>
-                  <li>Name : 60</li>
-                  <li>Name : 50</li>
+                <h2>Recent Scores <button class="refresh" type="button">Refresh</button></h2>
+                <ul class="score-holder">
                 </ul>
             </div>
             <div class="second-div">
               <h2>Add Your Score</h2>
-              <input type="text"><br>
-              <input type="text"><br>
-              <button class="submit" type="button">Submit</button>
+              <form class="form">
+                <input class="name" type="text" placeholder="Your Name"><br>
+                <input class="score" type="number" placeholder="Your Score"><br>
+                <button class="submit" type="button">Submit</button>
+              </form>
             </div>
         </section>
     </main>

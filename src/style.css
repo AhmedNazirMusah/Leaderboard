@@ -2,8 +2,6 @@ ul {
   padding-inline-start: 0;
   list-style: none;
   border: 1px solid;
-  width: max-content;
-  padding-right: 250px;
 }
 
 section {
@@ -12,8 +10,27 @@ section {
   gap: 79px;
 }
 
-.second-div {
+form {
   align-items: end;
   display: flex;
   flex-direction: column;
+}
+
+p {
+  padding: 10px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.score-holder > p:nth-child(even) {
+  background-color: #6b5151;
+  color: white;
+}
+
+.score-holder > p:nth-child(odd) {
+  color: rgb(9, 9, 9);
+}
+
+.red-border {
+  border: 2px solid red;
 }
