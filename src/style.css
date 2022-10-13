@@ -30,3 +30,7 @@ p {
 .score-holder > p:nth-child(odd) {
   color: rgb(9, 9, 9);
 }
+
+.red-border {
+  border: 2px solid red;
+}

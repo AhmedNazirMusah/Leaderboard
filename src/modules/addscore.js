@@ -6,9 +6,6 @@ export default class NewScore {
 }
 
 const addScore = async (user, score) => {
-//   const apiLink = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
-//   const shortlink = `${apiLink}games/`;
-//   const myId = 'NAjmpgjlPEaGPDuhK9lg';
   const UserInput = new NewScore(user, score);
   const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Nsex8thFeV4zbjEDkarK/scores/', {
     method: 'POST',
