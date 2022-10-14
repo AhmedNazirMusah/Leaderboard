@@ -72,6 +72,14 @@ input {
   border-radius: 7px;
 }
 
+.cmessage {
+  padding: 8px;
+  border-radius: 7px;
+  color: green;
+  background-color: aliceblue;
+  margin-top: 10px;
+}
+
 button {
   padding: 8px;
   border-radius: 7px;

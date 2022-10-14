@@ -1,4 +1,4 @@
-import { addScore } from './modules/addscore.js';
+import { addScore, addsuccess } from './modules/addscore.js';
 import getscores from './modules/getscore.js';
 import './style.css';
 
@@ -11,22 +11,9 @@ form.addEventListener('submit', async (e) => {
   const scoreInput = document.querySelector('.score');
   if (nameInput.value.length !== 0 && scoreInput.value.length !== 0) {
     addScore(nameInput.value, scoreInput.value);
-    scoreInput.classList.remove('red-border');
-    scoreInput.classList.remove('red-border');
     document.querySelector('.name').value = '';
     document.querySelector('.score').value = '';
-  } else {
-    if (nameInput.value.length === 0) {
-      nameInput.classList.add('red-border');
-    } else {
-      nameInput.classList.remove('red-border');
-    }
-
-    if (scoreInput.value.length === 0) {
-      scoreInput.classList.add('red-border');
-    } else {
-      scoreInput.classList.remove('red-border');
-    }
+    addsuccess('Sore Added Succesfully');
   }
 });
 
