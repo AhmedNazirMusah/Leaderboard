@@ -16,4 +16,15 @@ const addScore = async (user, score) => {
   return scoreFromApi;
 };
 
-export { addScore };
+const addsuccess = (message) => {
+  const messageContainer = document.createElement('div');
+  const inputdiv = document.querySelector('.second-div');
+  messageContainer.classList.add('cmessage');
+  messageContainer.innerHTML = message;
+  inputdiv.append(messageContainer);
+  setTimeout(() => {
+    messageContainer.remove();
+  }, 2000);
+};
+
+export { addScore, addsuccess };
